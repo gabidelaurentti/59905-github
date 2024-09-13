@@ -1,0 +1,167 @@
+
+/* color de fondo */
+header{ 
+    background-color:rgb(6, 69, 124) ;
+
+    
+}
+
+/* imagen principal */
+header img{
+    width: 35%;
+    padding-left: 33%
+
+    ;
+
+
+
+}
+
+/* estilos para de pinchables */
+header a {
+    text-align: center;
+    color: aliceblue;
+}
+/* estilos para textos */
+main .textos{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(2, 46, 85);
+     ;
+    
+    
+}
+
+/* estilos para footer */
+footer{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(2, 46, 85);
+}
+
+
+header nav ul{
+
+     
+    width: 100%;
+    list-style: none;
+   font-family: Arial, Helvetica, sans-serif ;
+   color: aliceblue;
+   display: flex;
+   
+   
+
+
+   ;
+   
+
+    
+}
+
+header div {
+    text-align: center;
+    
+    
+}
+/* estilos para class especificos de textos */
+.nosotros{
+    text-align: center;
+}
+.texto1{
+    text-align: center;
+}
+.texto2{
+    text-align: center;
+}
+.texto3{
+    text-align: center;
+}
+.texto4{
+    text-align: center;
+}
+.texto5{
+    text-align: center;
+}
+.texto6{
+    text-align: center;
+}
+.texto7{
+    text-align: center;
+}
+.texto8{
+    text-align: center;
+}
+
+.titulo1 {
+    text-align: center;
+}
+
+header ul li img {
+    width: 30%;
+    list-style: none;
+   font-family: Arial, Helvetica, sans-serif ;
+   font-size: medium;
+   color: aliceblue;
+   display: flex;
+}
+
+header div img {
+
+    display: flex  ;
+}
+
+main{
+    height: 70vh;
+    margin: 30px 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 23%) ;
+    row-gap: 3rem;
+    align-content: center;
+
+}
+
+
+main div img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+/* estilos de tablet */
+
+@media screen and (min-width:600px){
+    /*  estilos de main  */
+
+    main{
+        grid-template-columns: repeat(2, 0.5fr) ;
+        grid-template-rows: repeat(2, 50%) ;
+        column-gap: 1.5rem;
+    }
+
+    main .img-cuatro{
+        grid-column: span 1 ;
+    }
+}
+
+
+/*  estilos de desktop */ 
+
+@media screen and (min-width: 1024px) {
+    main .img-dos {
+         display: block;
+    }
+ 
+    main{
+         grid-template-columns: repeat(3, 1fr) ;
+         grid-template-rows: 10% 30% 20% ;
+    }
+ 
+    main .img-uno, main .img-tres{
+         grid-row: span 2;
+    }
+ 
+    main .img-dos{
+         grid-column: span 1;
+    }
+ 
+ }
